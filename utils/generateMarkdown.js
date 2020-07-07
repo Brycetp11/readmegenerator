@@ -45,7 +45,7 @@ ${response.test}
 
 ##Questions
 
-Author's GitHub profile (https://gihub.com/${response.github}).
+Author's GitHub profile (https://github.com/${response.github}).
 Author's email: ${response.email}
 `;
 }

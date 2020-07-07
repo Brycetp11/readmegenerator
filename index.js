@@ -16,7 +16,7 @@ const writeAsync = util.promisify(fs.writeFile)
 function init() {
     inquirer.prompt(userQuestions.questions)
     .then(response => (createReadMe.generateMarkdown(response)))
-    .then(string => writeAsync('README.md', string))
+    .then(string => writeAsync('newREADME.md', string))
     .catch(err => err)
 }
 

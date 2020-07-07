@@ -1,39 +1,23 @@
-# Title
-![Licence: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-##Description
+Link to github repo: https://github.com/Brycetp11/readmegenerator
 
-Description
+Video demonstration:
+![](utils\index.js - readmegenerator - Visual Studio Code 2020-07-06 19-07-00.mp4)
 
-##Table of Contents: 
-* [Description](#description)
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contribute](#contribute)
-* [Test](#test)
-* [Questions](#questions)
+In this project, I have created a readme.md file generator which will auto fill the user's desired: 
+  * Title
+  * Description
+  * Table of Contents
+  * Installation
+  * Usage
+  * License
+  * Contributing
+  * Tests
+  * Questions (email, and github username)
 
-##Installation
+  To do this I created 2 seperate js files within the util folder, the first with the inquirer prompts, and the second with the format of the readme.md.
 
-Dependencies
+  In the inquirer prompt js doc, I used mostly input types to generate the user's answers, then exported the array into the index.js file.
 
-##Usage 
+  The generateMarkdown file contains the template for a readme file with the selector to use the individual's response data to fill into the correct spaces. This document was also exported to the index.js file.
 
-use this way
-
-##License
-
-This application is using the MIT license.
-
-##Contribute
-
-add here
-
-##Test
-
-test here
-
-##Questions
-
-Author's GitHub profile (https://gihub.com/github).
-Author's email: github
+  In the index.js file, I required the needed node libraries, and wrote a few functions. First I used promisify to define an asynchronous function to write the md file. Then I wrote a function which would fire the inquirer prompts. Finally I created the readme file using the user's responses to the prompt and the asynchronous function defined previously.
